@@ -227,7 +227,7 @@ window.saw = (function($){
 		}
 		
 		function addTransitions(node){
-			node.style[TRANSITION] = TRANSFORM_CSS + ' 5s ease-in-out';
+			node.style[TRANSITION] = TRANSFORM_CSS + ' 0.5s ease-in-out';
 			
 			node.addEventListener(TRANSITION_END, function(e){
 				window.setTimeout(function(){
