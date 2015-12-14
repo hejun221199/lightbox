@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scaleable=no">
+	<title></title>
+	<link rel="stylesheet" href="reset.css" type="text/css" media="screen" charset="utf-8">
+	<link rel="stylesheet" href="slides.css" type="text/css" media="screen" harset="utf-8">
+</head>
+<body>
+	<div class="main">
+		<div class="welcome">
+			<h1>黑影里的世界</h1>
+			<p>在你明亮的世界里面我只是阴影</p>
+		</div>
+		<div class="carousel">
+			<ul>
+				<li>
+					<a class="slidelink" href="img/01.jpg">
+						<img data-owner="何军" data-url="img/01.jpg" data-full-height="768" data-full-width="1024" src="img/01.jpg" height="75" width="75">
+					</a>
+				</li>
+				<li>
+					<a class="slidelink" href="img/02.jpg">
+						<img data-owner="何军" data-url="img/02.jpg" data-full-height="768" data-full-width="1024" src="img/02.jpg" height="75" width="75">
+					</a>
+				</li>
+				<li>
+					<a class="slidelink" href="img/03.jpg">
+						<img data-owner="何军" data-url="img/03.jpg" data-full-height="768" data-full-width="1024" src="img/03.jpg" height="75" width="75">
+					</a>
+				</li>
+				<li>
+					<a class="slidelink" href="img/04.jpg">
+						<img data-owner="何军" data-url="img/04.jpg" data-full-height="768" data-full-width="1024" src="img/04.jpg" height="75" width="75">
+					</a>
+				</li>
+				<li>
+					<a class="slidelink" href="img/05.jpg">
+						<img data-owner="何军" data-url="img/05.jpg" data-full-height="768" data-full-width="1024" src="img/05.jpg" height="75" width="75">
+					</a>
+				</li>
+				<li>
+					<a class="slidelink" href="img/01.jpg">
+						<img data-owner="何军" data-url="img/01.jpg" data-full-height="768" data-full-width="1024" src="img/01.jpg" height="75" width="75">
+					</a>
+				</li>
+				<li>
+					<a class="slidelink" href="img/06.jpg">
+						<img data-owner="何军" data-url="img/06.jpg" data-full-height="768" data-full-width="1024" src="img/06.jpg" height="75" width="75">
+					</a>
+				</li>
+				<li>
+					<a class="slidelink" href="img/07.jpg">
+						<img data-owner="何军" data-url="img/07.jpg" data-full-height="768" data-full-width="1024" src="img/07.jpg" height="75" width="75">
+					</a>
+				</li>
+				<li>
+					<a class="slidelink" href="img/08.jpg">
+						<img data-owner="何军" data-url="img/08.jpg" data-full-height="768" data-full-width="1024" src="img/08.jpg" height="75" width="75">
+					</a>
+				</li>
+				<li>
+					<a class="slidelink" href="img/09.jpg">
+						<img data-owner="何军" data-url="img/09.jpg" data-full-height="768" data-full-width="1024" src="img/09.jpg" height="75" width="75">
+					</a>
+				</li>
+				<li>
+					<a class="slidelink" href="img/10.jpg">
+						<img data-owner="何军" data-url="img/10.jpg" data-full-height="768" data-full-width="1024" src="img/10.jpg" height="75" width="75">
+					</a>
+				</li>
+				<li>
+					<a class="slidelink" href="img/11.jpg">
+						<img data-owner="何军" data-url="img/11.jpg" data-full-height="768" data-full-width="1024" src="img/11.jpg" height="75" width="75">
+					</a>
+				</li>
+				<li>
+					<a class="slidelink" href="img/12.jpg">
+						<img data-owner="何军" data-url="img/12.jpg" data-full-height="768" data-full-width="1024" src="img/12.jpg" height="75" width="75">
+					</a>
+				</li>
+				<li>
+					<a class="slidelink" href="img/13.jpg">
+						<img data-owner="何军" data-url="img/13.jpg" data-full-height="768" data-full-width="1024" src="img/13.jpg" height="75" width="75">
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</body>
+<script src="slides.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+var lightbox = new saw.Lightbox('.carousel');
+document.body.addEventListener('click', function(e){
+	var targ;
+	if(e.target.tagName == 'IMG') {
+		e.preventDefault();
+		targ = e.target.parentNode;
+		lightbox.show(targ.getAttribute('href'));
+	}
+	
+});
+</script>
+</html>
